@@ -1,0 +1,5 @@
+{
+  "name": "HR Screening App",
+  "description": "An HR tool to screen CVs against job requirements using AI, with support for multiple job profiles and dark mode.",
+  "requestFramePermissions": []
+}
