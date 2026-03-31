@@ -4,6 +4,7 @@ export type JobProfile = {
   field: string;
   experience: string;
   skills: string;
+  professionalBackground: string;
   otherRequirements: string;
 };
 

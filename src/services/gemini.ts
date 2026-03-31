@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 export async function analyzeCV(
   fileBase64: string,
   mimeType: string,
-  profile: { title: string; field: string; experience: string; skills: string; otherRequirements: string }
+  profile: { title: string; field: string; experience: string; skills: string; professionalBackground: string; otherRequirements: string }
 ) {
   const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   
@@ -12,6 +12,7 @@ export async function analyzeCV(
     Field: ${profile.field}
     Required Experience: ${profile.experience}
     Required Skills: ${profile.skills}
+    Professional Background: ${profile.professionalBackground}
     Other Requirements: ${profile.otherRequirements}
   `;
 
